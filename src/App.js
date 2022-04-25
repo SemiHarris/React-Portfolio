@@ -3,6 +3,7 @@ import About from './components/About';
 import Nav from './components/Nav'
 import Portfolio from './components/Portfolio';
 import ContactForm from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
 
@@ -32,11 +33,17 @@ const [navSelected, setNavSelected] = useState(false);
             <About></About>
           </>
         ) : navSelected === 'Portfolio'? ( <> <Portfolio></Portfolio> </>) 
-        : navSelected === 'Resume'? ( <> <Portfolio></Portfolio> </>) 
+        : navSelected === 'Resume'? ( <> <Resume></Resume></>) 
         : (
           <ContactForm></ContactForm>
         )}
       </main>
+
+      <footer>
+        <a href={'https://github.com/SemiHarris'} className='mx-2'>Github</a>
+        <a href={'https://www.linkedin.com/in/semi-harris-873662222'} className='mx-2'>Linkedin</a>
+        <a href={'https://twitter.com/harris_semi'} className='mx-2'>Twitter</a>
+      </footer>
     </div>
   );
 }
