@@ -22,6 +22,11 @@ function PortfolioList(props) {
       name: 'News4U',
       link: 'https://rpkrupali1.github.io/News4U/',
       file: 'news4u'
+    },
+    {
+      name: 'Computer Creator',
+      link: 'https://build-your-pc-incorporated.herokuapp.com/',
+      file: 'finalproject'
     }
   ])
 
